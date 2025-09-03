@@ -8,24 +8,8 @@ using System.Threading.Tasks;
 
 namespace BasicCalculator.Classes
 {
-    public class Helper 
+    public class Helper
     {
-        public static IEquetion checkOperation(char operation)
-        {
-            switch(operation)
-            {
 
-                case '+':
-                    return new Addition();
-                case '-':
-                    return new Subtraction();
-                case '*':
-                    return new Multiplication();
-                case '/':
-                    return new Division();
-                default:
-                    throw new InvalidOperationException("Operation not supported");
-                }
-            }
     }
 }

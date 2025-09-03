@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace BasicCalculator.Classes.Operations
 {
-    public class Addition:IEquetion
+    public class root : IEquetion
     {
-        public char Operation => '+';
+        public char Operation => '√';
 
         public double Execute(double a, double b)
         {
-            return a + b;
+            return Math.Pow(a, 1 / b);
         }
     }
+   
 }
-
